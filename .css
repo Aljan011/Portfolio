@@ -9,6 +9,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
+    animation: ani1 20s ease-out forwards;
 }
 
 .text {
@@ -23,6 +24,49 @@
     cursor: default;
     white-space: nowrap;
     font-size: 25px;
+    animation: ani2 0.5s ease-out forwards;
+}
+
+.text h1,
+.text p {
+    opacity: 0;
+    margin: 0;
+}
+
+.text h1 {
+    animation: ani2 8s ease-out forwards;
+}
+
+.text p {
+    animation: ani2 10s ease-out forwards;
+}
+
+@keyframes ani2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ani1 {
+    100% {
+        transform: rotate3d(2.55);
+    }
+}
+
+.navbar a {
+    opacity: 0;
+    margin: 0;
+}
+
+.navbar a {
+    animation: ani3 12s ease-in forwards;
+}
+
+@keyframes ani3 {
+    100% {
+        opacity: 2;
+        transform: rotate3d(0.55);
+    }
 }
 
 .navbar {
@@ -34,7 +78,6 @@
 
 .navbar a {
     float: left;
-    background-color: rgba(15, 96, 117, 0.579);
     display: block;
     color: azure;
     text-align: center;
