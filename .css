@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.Video1 {
+    left: 50%;
+    max-width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    text-rendering: geometricPrecision;
+    user-select: none;
+    cursor: default;
+    white-space: nowrap;
+    font-size: 25px;
+}
+
+.navbar {
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.navbar a {
+    float: left;
+    background-color: rgba(15, 96, 117, 0.579);
+    display: block;
+    color: azure;
+    text-align: center;
+    padding-right: 145px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+#GFG {
+    text-decoration: none;
+}
