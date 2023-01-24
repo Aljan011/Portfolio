@@ -24,6 +24,7 @@
     cursor: default;
     white-space: nowrap;
     font-size: 25px;
+    mix-blend-mode: screen;
     animation: ani2 0.5s ease-out forwards;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .navbar a {
-    animation: ani3 12s ease-in forwards;
+    animation: ani3 5s ease-in forwards;
 }
 
 @keyframes ani3 {
@@ -89,6 +90,23 @@
 .navbar a:hover {
     background: #ddd;
     color: black;
+}
+
+.navbar1 {
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.navbar1 a {
+    float: left;
+    display: block;
+    color: azure;
+    text-align: center;
+    padding-right: 145px;
+    padding-left: 50px;
+    font-size: 18px;
 }
 
 #GFG {
