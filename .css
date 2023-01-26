@@ -128,3 +128,88 @@
 #GFG {
     text-decoration: none;
 }
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sub-box-1 {
+    width: 500px;
+    height: 400px;
+    border: solid 5px #00bfff;
+    padding: 10px;
+    background-color: #00bfff;
+    position: relative;
+    box-shadow: 0px 0px 10px #00bfff;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.sub-box-1 p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-box-2,
+.sub-box-3 {
+    width: 250px;
+    height: 200px;
+    border: solid 5px #00bfff;
+    padding: 10px;
+    background-color: rgba(0, 191, 255, 0.5);
+    position: absolute;
+    box-shadow: 0px 0px 10px #00bfff;
+}
+
+.sub-box-2 {
+    left: 25px;
+    bottom: 25px;
+}
+
+.sub-box-3 {
+    right: 25px;
+    bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .sub-box-1 {
+        width: 90%;
+        height: auto;
+    }
+    .sub-box-2,
+    .sub-box-3 {
+        width: 40%;
+        height: auto;
+        bottom: 0;
+    }
+    .sub-box-2 {
+        left: 0;
+    }
+    .sub-box-3 {
+        right: 0;
+    }
+}
+
+.sub-box-2,
+.sub-box-3 {
+    width: 90%;
+    /* adjust the width */
+    position: relative;
+    /* change the position */
+    margin-top: 100px;
+    /* add margin top to separate them */
+}
