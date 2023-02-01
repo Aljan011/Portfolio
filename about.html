@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href=".js">
 </head>
 <style>
     body {
@@ -16,6 +17,7 @@
 
 <body>
 
+   
     <div class="navbar1">
         <a id="GFG" href="index.html">Home</a>
         <a id="GFG" href="about.html">About</a>
@@ -23,19 +25,29 @@
         <a id="GFG" href="education.html">Education</a>
         <a id="GFG" href="contact.html">Contact</a>
         <a id="GFG" href="refrences.html">Refrences</a>
-    </div>
-
-    <div class="main-container">
+        <div class="dropdown-btn">
+            &#9776; 
+          </div>
+        </div>
+        
+        <script>
+          // toggle dropdown menu
+          var dropdownBtn = document.querySelector('.dropdown-btn');
+          dropdownBtn.addEventListener('click', function() {
+            var navbar = document.querySelector('.navbar1');
+            navbar.classList.toggle('show');
+          });
+        </script>
+      
+    
+         <div class="main-container">
         <div class="sub-box-1">
             <h1>About me</h1>
             <p>My name is Aljan K.C. and I'm currently studying BSc(hons) at Herald college Kathmandu.</p>
         </div>
-        <div class="sub-box-2"></div>
-        <div class="sub-box-3"></div>
+        <div class="sub-box-2"><p>jhgsdgoijadiuhgughas uisadhg ahsdujgh jasd gjkadshg jasdgh adgjdhgjad jgkhasdjg djghasdhg ds gjsdvbjkasupJBG JSDBALHJFB FIDBN HJGBDSOHIG DGFHSDG FGDHFG sdfgdsf gsdgf DFGDGF DGFDS Fgdsf dsfgd fjhfjhf</p></div>
+        
     </div>
-
-
-
 </body>
 
 </html>
