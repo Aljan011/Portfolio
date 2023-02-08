@@ -7,10 +7,10 @@
     left: 50%;
     max-width: 100vw;
     position: fixed;
-    top: 50%;
+    /* top: 50%; */
     transform: translate(-50%, -50%);
     z-index: 0;
-    animation: ani1 20s ease-out forwards;
+    /* animation: ani1 20s ease-out forwards; */
 }
 
 .text {
